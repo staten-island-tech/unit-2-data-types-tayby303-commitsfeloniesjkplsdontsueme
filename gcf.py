@@ -1,10 +1,9 @@
-a=int(input("Number 1: "))
-b=int(input("Number 2: "))
-def find_gcf_loop(num1, num2):
-    smaller = min(num1, num2)
-    for i in range(smaller, 0, -1):
-        if num1 % i == 0 and num2 % i == 0:
-            return i
+num1=int(input("Number 1: "))
+num2=int(input("Number 2: "))
+def gcf(a,b):
+  smaller=min(a,b)
+  for i in (smaller,0,-1):
+    if a%i==0 and b%i==0:
+     return i
     return 1
-
-print(find_gcf_loop(a, b)
+print(gcf(num1,num2))
