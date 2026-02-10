@@ -5,3 +5,4 @@ def factor(x):
     if n % i == 0:
       factors.append(i)
   return factors
+print(factor(n))
